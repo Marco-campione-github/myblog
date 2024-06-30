@@ -1,0 +1,29 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "This the blog of Marco Campione where I write down my stuff and expose my works!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marco-campione-github/myblog.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "personal",
+    "projects",
+    "frontend",
+    "javascript",
+    "css",
+    "html"
+  ],
+  "author": "Marco Enrico Campione",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marco-campione-github/myblog/issues"
+  },
+  "homepage": "https://github.com/Marco-campione-github/myblog#readme"
+}
