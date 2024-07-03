@@ -1,0 +1,14 @@
+{
+    "strings" : {
+        "name" : "Marco",
+        "middlename" : "Enrico",
+        "surname" : "Campione",
+        "year" : "2024"
+    },
+    "links" : {
+        "email" : "mcampione21@gmail.com",
+        "github" : "https://github.com/Marco-campione-github",
+        "linkedin" : "https://www.linkedin.com/in/marco-campione-773247232/"
+    }
+}
+  

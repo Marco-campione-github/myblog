@@ -1,22 +1,29 @@
 const express = require("express");
+const path = require("path");
+const fs = require("fs");
+const variables = require(path.join(__dirname, "public", "variables.json"));
+
 const app = express();
 const port = 3000;
 
-app.use(express.static("public"));
+// Set EJS as the view engine (optional?)
+//app.set("view engine", "ejs");
 
-// Handling '/' request using the file index.html in the public folder
+app.use(express.static(path.join(__dirname, "public")));
+
+// Handling '/' request using the file index.ejs in the public folder
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/public/index.html");
+  res.render(path.join(__dirname, "public", "index.ejs"), { variables });
 });
 
 // Handling '/about' request
 app.get("/about", (req, res) => {
-  res.sendFile(__dirname + "/public/about.html");
+  res.render(path.join(__dirname, "public", "about.ejs"), { variables });
 });
 
 // Handling '/news' request
-app.get("/about", (req, res) => {
-  res.sendFile(__dirname + "/public/news.html");
+app.get("/news", (req, res) => {
+  res.render(path.join(__dirname, "public", "news.ejs"), { variables });
 });
 
 // Server setup

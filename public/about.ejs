@@ -11,19 +11,20 @@
         <h1>About Me</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/about">About</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <h2>Personal Information</h2>
-            <p>Name: Your Name</p>
+            <p>Name: <span id="name"></span></p>
+            <p>Year: <%= variables.strings.year %></p>
             <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
             <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></p>
+            <p>GitHub: <a href="<%= variables.links.github %>">GitHub Profile</a></p>
         </section>
     </main>
     <footer>
