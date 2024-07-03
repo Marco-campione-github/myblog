@@ -1,7 +1,7 @@
 {
   "name": "myblog",
   "version": "1.0.0",
-  "description": "This the blog of Marco Campione where I write down my stuff and expose my works!",
+  "description": "This the blog of Marco Campione where he writes down his stuff and expose his works!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +25,9 @@
   "bugs": {
     "url": "https://github.com/Marco-campione-github/myblog/issues"
   },
-  "homepage": "https://github.com/Marco-campione-github/myblog#readme"
+  "homepage": "https://github.com/Marco-campione-github/myblog#readme",
+  "dependencies": {
+    "expres": "^0.0.5",
+    "express": "^4.19.2"
+  }
 }
