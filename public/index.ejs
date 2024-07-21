@@ -7,24 +7,14 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/news">News</a></li>
-                <li><a href="/about">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <%- include('header.ejs') %>
     <main>
         <section>
             <h2>Home</h2>
-            <p>Welcome to my portfolio. Explore my latest work and get to know more about me.</p>
+            <p style="width: 70%;">My name is Marco Campione. I am a master's student in Computer Science for the <strong><a href="https://www.unimib.it/">Università degli Studi di Milano-Bicocca</a></strong>. At the moment I am in an exchange semester in <strong><a href="https://www.uni-hamburg.de/">Universität Hamburg</a></strong> because I am working 
+                in collaboration with <strong><a href="https://verbund.edeka/edeka-it.html">Edeka IT</a></strong> to write my master thesis titled "<em>Gamification to support frontline workers</em>".</p>
         </section>
     </main>
-    <footer>
-        <p>&copy; <%= variables.strings.year %> <%= variables.strings.name %> <%= variables.strings.middlename %> <%= variables.strings.surname %></p>
-    </footer>
+    <%- include('footer.ejs') %>
 </body>
 </html>

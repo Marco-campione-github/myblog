@@ -10,11 +10,18 @@ header {
     color: white;
     padding: 1em 0;
     text-align: center;
+    position: relative;
+}
+
+nav {
+    position: relative;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: inline-block;
 }
 
 nav ul li {
@@ -25,6 +32,17 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 50%;
+    border: 2px solid black; /* Optional: adds a border around the picture */
 }
 
 main {
@@ -51,4 +69,21 @@ a {
 
 a:hover {
     color: #005f99;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Optional: If you want to center within the viewport height */
+    text-align: left;
+}
+
+.node-logo {
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
 }

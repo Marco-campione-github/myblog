@@ -6,8 +6,8 @@ const variables = require(path.join(__dirname, "public", "variables.json"));
 const app = express();
 const port = 3000;
 
-// Set EJS as the view engine (optional?)
-//app.set("view engine", "ejs");
+// Set the view engine to EJS
+app.set("view engine", "ejs");
 
 app.use(express.static(path.join(__dirname, "public")));
 
@@ -24,6 +24,16 @@ app.get("/about", (req, res) => {
 // Handling '/news' request
 app.get("/news", (req, res) => {
   res.render(path.join(__dirname, "public", "news.ejs"), { variables });
+});
+
+// Handling '/projects' request
+app.get("/projects", (req, res) => {
+  res.render(path.join(__dirname, "public/", "projects.ejs"), { variables });
+});
+
+// Handling '/education' request
+app.get("/education", (req, res) => {
+  res.render(path.join(__dirname, "public/", "education.ejs"), { variables });
 });
 
 // Server setup
